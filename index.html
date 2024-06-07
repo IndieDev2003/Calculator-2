@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="app">
+            <input id="screen" type="text" name="" value="10+20">
+            <div id="row">
+                <button onclick="screen.value=``" id="AC">AC</button>
+                <!-- <button onclick="DltOne">CE</button> -->
+                <button onclick="AddInput('*')">*</button>
+                <button onclick="AddInput('/')">/</button>
+            </div>
+            <div id="row">
+                <button onclick="AddInput('9')">9</button>
+                <button onclick="AddInput('8')">8</button>
+                <button onclick="AddInput('7')">7</button>
+                <button onclick="AddInput('+')">+</button>
+            </div>
+            <div id="row">
+                <button onclick="AddInput('6')">6</button>
+                <button onclick="AddInput('5')">5</button>
+                <button onclick="AddInput('4')">4</button>
+                <button onclick="AddInput('-')">-</button>
+            </div>
+            <div id="row">
+                <button onclick="AddInput('3')">3</button>
+                <button onclick="AddInput('2')">2</button>
+                <button onclick="AddInput('1')">1</button>
+                <button onclick="AddInput('.')">.</button>
+            </div>
+            <div id="row">
+                <button onclick="AddInput('00')">00</button>
+                <button onclick="AddInput('0')">0</button>
+                <button id="equal" onclick="InputEqual()">=</button>
+            </div>
+        </div>
+   
+    </div>    
+
+    <script src="main.js"></script>
+</body>
+</html>
